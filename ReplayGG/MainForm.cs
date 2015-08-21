@@ -29,7 +29,8 @@ namespace ReplayGG
         }
 
         private void MainForm_Load(object sender, EventArgs e)
-        { 
+        {
+            ConfigManager.Initialize();
             ReplayManager.Initialize();
 
             this.LoadReplays();
@@ -146,9 +147,9 @@ namespace ReplayGG
 
             this.replayServer.Start();
 
-            process.StartInfo.FileName = Path.Combine(Program.LeagueDir, Program.LeagueExecutable);
+            process.StartInfo.FileName = Path.Combine(Program.Config.LeagueDir, Program.LeagueExecutable);
             process.StartInfo.Arguments = String.Format(@"""8394"" ""LoLLauncher.exe"" """" ""replay localhost:8080 {0} {1} {2}""", replayData.EncryptionKey, replayData.Metadata.GameKey.GameId, replayData.Metadata.GameKey.PlatformId);
-            process.StartInfo.WorkingDirectory = Program.LeagueDir;
+            process.StartInfo.WorkingDirectory = Program.Config.LeagueDir;
 
             process.Start();
 
