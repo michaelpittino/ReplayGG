@@ -8,6 +8,13 @@ When the download is finished you can click on your replay and launch it. Replay
 the replay data and will launch League of Legends.  
 There you go!
 
+## Configuration
+After you launched ReplayGG one time a config file (`config.xml`) is created in the directory.  
+Change the `LeagueDir` property to your League of Legends directory (where your League of Legends.exe is).
+
+## Contribution
+Anything you want to change? Just fork it and give me a pull request :)
+
 ## License
 
 The MIT License (MIT)
