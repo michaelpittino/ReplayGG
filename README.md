@@ -1,5 +1,5 @@
 # ReplayGG
-ReplayGG is a [replay.gg](replay.gg) replay downloader/manager/launcher.
+ReplayGG is a [http://replay.gg](replay.gg) replay downloader/manager/launcher.
 
 ## How to use
 Download the program or compile it yourself, launch it, paste a [replay.gg](http://replay.gg) link in the download-field
